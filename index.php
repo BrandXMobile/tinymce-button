@@ -3,12 +3,11 @@
  * Plugin Name: TinyMCE Button
  * Plugin URI: http://neptik.com
  * Version: 1.0
- * Author: Michael Gunner
- * Author URI: http://www.michaelgunner.co.uk
+ * Author: Joe Falconer/Michael Gunner
  * Description: Add a button to the tinyMCE
  */
 
-class JBD_App {
+class TinyMCE_Button_App {
 
     /**
     * Constructor. Called when the plugin is initialised.
@@ -55,4 +54,4 @@ class JBD_App {
  
 }
 
-$JBD_App = new JBD_App;
+$TinyMCE_Button_App = new TinyMCE_Button_App;
