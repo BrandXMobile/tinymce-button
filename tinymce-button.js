@@ -6,28 +6,27 @@
             text: ' Add Button Link',
             onclick: function() {
                 editor.windowManager.open({
-                    title: "Insert Tabs",
+                    title: "Insert Button",
                     body: [{
                         type: 'textbox',
                         name: 'buttonUrl',
                         label: 'URL',
-                        value: 'home-url.dev'
+                        value: 'Page URL'
                     },
                     {
                         type: 'textbox',
                         name: 'className',
                         label: 'Class Name',
-                        value: ''
+                        value: 'button'
                     },
                     {
                         type: 'textbox',
                         name: 'text',
                         label: 'Text',
-                        value: ''
+                        value: 'Read More'
                     }],
                     onsubmit: function(e) {
                         var data = e.data;
-                        console.log(data);
                         editor.insertContent('<a href="' + data.buttonUrl + '" class="' + data.className + '">' + data.text + '</a>');
                     }
                 });
